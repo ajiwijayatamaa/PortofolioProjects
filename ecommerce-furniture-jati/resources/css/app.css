@@ -1,0 +1,403 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Login */
+.wrapper-login{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('/public/icons/logoFJI.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.wrapper-login-form{
+	width: 420px;
+	background: transparent;
+	border: 2px solid #e09151;
+	backdrop-filter: blur(20px);
+	box-shadow: 0 0 10px #633937;
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px;
+}
+
+.h1Login{
+	font-size: 36px;
+	text-align: center;
+	text-shadow:0 0 10px #e09151;
+}
+
+.wrapper-login-form .input-box{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 30px 0;
+}
+
+.input-email{
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 40px;
+	font-size: 16px;
+	color: #fff;
+	padding: 20px 45px 20px 20px;
+}
+
+.input-email::placeholder {
+	color: #fff;
+}
+
+.icons-ep{
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+}
+
+.wrapper-login-form .remember-forgot{
+	display: flex;
+	justify-content: space-between;
+	font-size: 14.5px;
+	margin: -15px 0 15px;
+}
+
+.label-rf, .input-rf{
+	accent-color: #fff;
+	margin-right: 3px;
+}
+.a-rf{
+	color: #fff;
+	text-decoration: none;
+}
+
+.a-rf:hover {
+	text-decoration: underline;
+}
+
+.login-btn{
+	width: 100%;
+	height: 45px;
+	background: #fff;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+	cursor: pointer;
+	font-size: 16px;
+	color: #333;
+	font-weight: 600;
+}
+
+.register-link{
+	font-size: 14.5px;
+	text-align: center;
+	margin: 20px 0 15px;
+
+}
+
+.p-register, .a-register{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+.a-register:hover {
+	text-decoration: underline;
+}
+/* END LOGIN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* AWAL HEADER CSS */
+
+.wrapper-homepage{
+	background-color: #f6f6f6;
+}
+.header-main-container{
+	margin: 0;             
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+ /* AWAL Navbar Header  */
+.container-header-navbar-service {
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container-header-item {
+	background-color: black;
+	display: flex;
+	flex: 1;
+	max-width: 90%;
+	justify-content: center;
+}
+
+.navbar-item-service{
+	padding: 10px 90px;
+	display: flex;
+}
+
+.navbar-item-service a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+}
+
+.navbar-item-service a:hover{
+	text-decoration: underline;
+}
+
+.navbar-item-contact{
+	display: flex;
+	flex: 1;
+	max-width: 10%;
+	background-color: black;
+	justify-content: center;
+}
+
+.navbar-item-contact a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.navbar-item-contact a:hover{
+	text-decoration: underline;
+}
+ /* END Navbar Header  */
+
+
+ /* AWAL Header Column Search */
+.container-header-column-search {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-logo-company{
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	max-width: 15%;
+}
+
+.navbar-logo-company{
+	padding: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+
+.icon-searchbar {
+	width: max-content;
+	display: flex;
+	flex: 1;
+	max-width: 70%;
+	align-items: center;
+	padding: 14px;
+	border-radius: 28px;
+	background-color: #f6f6f6;/* Warna yang wajib untuk searchbar */
+	width: 600px;
+	transition: box-shadow 0.25s;
+}
+
+.icon-searchbar:focus-within{
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.75)
+}
+.search-input {
+	font-size: 16px;
+	font-family: "Lexend", sans-serif;
+	color: #333333; /* Warna yang wajib untuk keyword seacrh */
+	margin-left: 14px; 
+	outline: none;
+	border: none;
+	background: transparent;
+	flex: 1; /* Auto Untuk ngikutin width dari si class icon-searchbar */
+}
+
+.search-input::placeholder,
+.search-icon{
+	color: rgba(0, 0, 0, 0.25); /* Warna yang wajib untuk placeholder seacrh */
+}
+
+
+.icon-wishlist {
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	max-width: 15%;
+}
+
+.navbar-logo-wishlist{
+	padding: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	transition: box-shadow 0.25s;
+}
+
+.navbar-logo-wishlist:focus-within{
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.75)
+
+}
+
+ /* END Header Column Search */
+
+
+ /* AWAL Header Categories */
+.container-header-categories{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar-list-categories{
+	display: flex;
+	flex: 1;
+	max-width: 70%;
+	justify-content: space-around;
+}
+
+.navbar-item-categories a {
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.navbar-item-categories a:hover{
+	color: rgba(0, 0, 0, 0.75);
+}
+
+ /* AWAL Header Categories */
+ 
+/* END HEADER CSS */
+
+
+/* AWAL CONTENT */
+.container-main-content{
+	margin: 0;             
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn{
+	--bs-btn-font-weight: 550;
+}
+
+
+
+/* PRODUK UNGGULAN AWAL */
+
+/* PRODUK UNGGULAN AKHIR */
+
+
+/* Custom Furniture */
+
+/* END Custom Furniture */
+/* END CONTENT */
+
+
+/* AWAL FOOTER */
+.container-main-footer{
+	background-color: #48A6A7;
+	margin: 0;             
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container-link-footer{
+	margin: 10px;
+	font-family: "Montserrat", sans-serif;
+	width: 100%;	
+	justify-content: center;
+}
+
+.footer-link{
+	display: flex;
+	flex: 1;
+	justify-content: space-evenly;
+}
+
+.container-list-icon-footer{
+	font-family: "Montserrat", sans-serif;
+	width: 100%;	
+	justify-content: center;
+}
+
+.footer-icon{
+	margin: 10px;
+	display: flex;
+	flex: 1;
+	justify-content: space-evenly;
+}
+/* END FOOTER */
+
+.section {
+	position: relative;
+	overflow: hidden;
+	color: white;
+	padding: 50px;
+	height: 400px;
+}
+.left {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('sofa-background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.right {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('room-inspiration.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.btn-custom {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
