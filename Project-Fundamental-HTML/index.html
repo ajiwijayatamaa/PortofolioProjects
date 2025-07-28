@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Fundamental HTML</title>
+</head>
+<body>
+    <!-- Awal Header -->
+    <header>
+        <a href="#teorihtml">Teori HTML:</a>
+        <ol type="a">
+            <li>
+                <a href="#taghead">Tag Head</a>
+            </li>
+            <li>
+                <a href="#tagbody">Tag Body</a>
+            </li>
+            <li>
+                <a href="#strukturtag">Struktur Tag</a>
+            </li>
+        </ol>
+        <a href="#praktekhtml">Praktek HTML: </a>
+        <ol type="a">
+            <li>
+                <a href="#belajarimage">Belajar Image, </a>
+            </li>
+            <li>
+                <a href="#praktektable">Praktek Table, </a>
+            </li>
+            <li>
+                <a href="#praktekform">Praktek Form </a>
+            </li>
+        </ol>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Awal Main -->
+    <main>
+        <h1 id="teorihtml">BELAJAR HTML dan CSS</h1>
+        <!-- TEORI HTML -->
+        <section>    
+            <!-- Awal Tag Head -->
+            <h2 id="taghead" style="text-align: center; color: blue;">Tag yang Boleh Ada di &lt;head&gt;</h2>
+            <div>
+                <ol>
+                    <li>
+                        <p>
+                            <strong>Judul Halaman</strong>
+                            <code>&lt;title&gt;</code>: Menentukan judul halaman browser
+                        </p> 
+                    </li>
+                    <li>
+                        <p>
+                            <strong>CSS</strong>
+                            <code>&lt;style&gt;</code>: Menulis CSS langsung di halaman
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>JavaScript</strong>
+                            <code>&lt;script&gt;</code>: Menambahkan JavaScript
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Metadata</strong>
+                            <code>&lt;meta&gt;</code>: Metadata ini penting untuk mendskripsikan website kita, contohnya:
+                        </p>
+                    </li>
+                    <ol type="a">
+                        <li>
+                            <p>
+                                <code>&lt;meta charset="UTF-8"&gt;</code>: charset singkatan dari Character set untuk menunjukan encoding karakter
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;meta name="description" content="Belajar HTML"&gt;</code>: Deskripsi dari website kita
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;meta name="keywords" content="HTML,CSS,JavaScript"&gt;</code>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;meta name="author" content="Aji"&gt;</code>: Pembuat nya siapa, ini penting untuk search engine agar dapat dengan mudah mengindentifikasi website kita
+                            </p>       
+                        </li>
+                        <li>
+                            <p>
+                                <code>&lt;meta charset="UTF-8"&gt;</code>: charset singkatan dari Character set untuk menunjukan encoding karakter
+                            </p>
+                        </li>
+                    </ol>
+                </ol>
+            </div>
+            <!-- Akhir Tag Head -->
+
+            <hr>
+
+            <!-- Awal Tag Body -->
+            <h2 id="tagbody">Tag yang Boleh Ada di &lt;body&gt;</h2>
+            <div>
+                <ol>
+                    <li>
+                        <p>
+                            <strong>Teks:</strong>
+                            <code>&lt;h1&gt;,</code><code>&lt;h2&gt;,</code><code>&lt;h3&gt;,</code><code>&lt;h4&gt;,</code><code>&lt;h5&gt;,</code><code>&lt;h6&gt;,</code><code>&lt;p&gt;, dll.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Pendukung Teks:</strong>  
+                            <code>&lt;br&gt;,</code><code>&lt;hr&gt;,</code><code>&lt;em&gt;,</code><code>&lt;strong&gt;, dll.</code>
+                        </li>
+                        </p>
+                    <li>
+                        <p>
+                            <strong>Gambar:</strong>
+                            <code>&lt;img&gt;.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Hyperlink:</strong>
+                            <code>&lt;a&gt;.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>List (bullets & numbering):</strong>
+                            <code>&lt;ul&gt;,</code><code>&lt;ol&gt;,</code><code>&lt;li&gt;,</code><code>&lt;dl&gt;,</code><code>&lt;dt&gt;,</code><code>&lt;dd&gt;.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Tabel:</strong>
+                            <code>&lt;table&gt;,</code><code>&lt;thead&gt;,</code><code>&lt;tbody&gt;,</code><code>&lt;tfooter&gt;,</code><code>&lt;th&gt;,</code><code>&lt;td&gt;</code><code>&lt;tr&gt;, dll.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Form:</strong>
+                            <code>&lt;form&gt;,</code><code>&lt;input&gt;,</code><code>&lt;select&gt;,</code><code>&lt;button&gt;, </code>dll.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Script:</strong>
+                            <code>&lt;script&gt;.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Object:</strong>
+                            <code>&lt;object&gt;.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Grouping:</strong>
+                            <code>&lt;div&gt;,</code><code>&lt;span&gt;.</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Komentar:</strong>
+                            <code>&lt;!-- --&gt;.</code>
+                        </p>
+                    </li>
+                </ol>
+            </div>
+            <!-- Akhir Tag Body -->
+
+            <hr>
+
+            <!-- AWAL STRUKTUR TAG -->
+            <h2 id="strukturtag">Struktur Tag</h2>
+            <div>
+                <p>
+                    <strong>&lt;namatag atribut="nilai"&gt;</strong>
+                </p>
+                <p>
+                    <b>Contoh:</b> <strong>&lt;body bgcolor="red"&gt;</strong>
+                </p>
+    
+                <p>
+                    <strong>Atribut GlobaL</strong>
+                </p>
+                <p>
+                    Tiap tiap tag punya atribut yang default atau yang global yang sama semua tag punya, kita sebut dengan atribut global, seperti:
+                </p>
+                <ol>
+                    <li>
+                        accesskey : Untuk menentukan elemen ini bisa diakses menggunakan keyboard atau shortcut
+                    </li>
+                    <li>
+                        class: Untuk menandai elemen
+                    </li>
+                    <li>
+                        id: Untuk menandai elemen
+                    </li>
+                    <li>
+                        dir: Untuk menentukan arah tulisannya / direction
+                    </li>
+                    <li>
+                        lang: language
+                    </li>
+                    <li>
+                        style: Untuk menyisipkan inline css
+                    </li>
+                    <li>
+                        tabindex: Untuk menentukan urutan form pas ktia pencet tab
+                    </li>
+                    <li>
+                        tittle: Untuk beri judul pada sebuah elemen
+                    </li>
+                </ol>
+            </div>
+            <!-- Akhir STRUKTUR TAG -->
+        </section>
+        <!-- END TEORI HTML -->
+
+        <hr>
+
+        <!-- PRAKTEK HTML -->
+        <section>
+            <h2 id="praktekhtml">Praktek HTML</h2>
+            <!-- AWal Image -->
+            <h3 id="belajarimage">Belajar Image</h3>
+            <div>
+                <img src="Banner.png" alt="Banner Penjualan" title="Banner Penjualan Furniture" width="250">
+                <p>
+                    <b>src</b>: URL atau path gambar yang akan ditampilkan yaitu Banner.png
+                </p>
+                <p>
+                    <b>alt</b>: Teks alternatif jika gambar gagal dimuat juga dibaca oleh screen reader
+                </p>
+                <p>
+                    <b>title</b>: Teks tooltip yang muncul saat kursor diarahkan ke gambar
+                </p>
+                <p>
+                    <b>width</b>: Mengatur lebar tampilan gambar (dalam pixel) 250px walaupun tidak dituliskan px defaultnya itu px
+                </p>
+            </div>
+            <!-- Akhir Image -->
+            <hr>
+            <!-- PRAKTEK Table -->
+            <h3 id="praktektable">Praktek Table</h3>
+            <div>
+    
+                <h3>Table 1</h3>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <th>1,1</th>
+                            <th>1,2</th>
+                            <th>1,3</th>               
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2,1</td>
+                            <td>2,2</td>
+                            <td>2,3</td>
+                        </tr>
+                        <tr>
+                            <td>3,1</td>
+                            <td>3,2</td>
+                            <td>3,3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Table 2</h3>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <thead>
+                        <tr>
+                            <th>1,1</th>
+                            <th colspan="2">colspan=2</th>
+                                   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2,1</td>
+                            <td>2,2</td>
+                            <td>2,3</td>
+                        </tr>
+                        <tr>
+                            <td>3,1</td>
+                            <td>3,2</td>
+                            <td>3,3</td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <h3>Table 3</h3>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td rowspan="3">rowspan = 3</td>
+                        <td colspan="2">colspan = 2</td>
+                    </tr>
+                    <tr>
+                        <td>2,2</td>
+                        <td>2,3</td>
+                    </tr>
+                    <tr>
+                        <td>3,2</td>
+                        <td>3,3</td>
+                    </tr>
+                </table>
+    
+                <h3>Table 4</h3>
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td>1,1</td>
+                        <td>1,2</td>
+                        <td>1,3</td>
+                        <td>1,4</td>
+                    </tr>
+                    <tr>
+                        <td>2,1</td>
+                        <td rowspan="2" colspan="2" align="center">?</td>
+                        <td>2,4</td>
+                    </tr>
+                    <tr>
+                        <td>3,1</td>
+                        <td>3,4</td>
+                    </tr>
+                    <tr>
+                        <td>4,1</td>
+                        <td>4,2</td>
+                        <td>4,3</td>
+                        <td>4,4</td>
+                    </tr>
+                </table>
+            </div>
+             <!-- END PRAKTEK Table -->
+            <hr>
+            <!-- PRAKTEK FORM -->
+            <h3 id="praktekform"> Praktek Form </h3>
+            <h3>Form biasa</h3>
+            <div>
+                <form action="">
+                    <label for="username">Username</label>
+                    <input type="text" name="" id="username">
+                    <br>
+                    <label for="password">Password</label>
+                    <input type="password" name="" id="password">
+                    <br>
+                    <input type="radio" id="pria" name="gender">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="gender">
+                    <label for="wanita">Wanita</label>
+                    <br>
+                    <input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label>
+                    <input type="checkbox" id="musik"><label for="musik">Musik</label>
+                    <input type="checkbox" id="games"><label for="games">Games</label>
+                    <br>
+                    <input type="submit" name="" id="" value="Kirim Sekarang!!">
+                    <br>
+                    <textarea name="" id=""></textarea>
+                    <br>
+                    <button type="submit">Kirim</button>
+                    <br><br>
+                    <select name="" id="">
+                        <option value="">Jakarta</option>
+                        <option value="">Bandung</option>
+                        <option value="">Bogor</option>
+                    </select>
+                </form>
+            </div>
+            <h3>Menggunakan Tabel untuk perapihan form</h3>
+            <div>
+                <table>
+                    <form action="">
+                        <tr>
+                            <td><label for="email">Email: </label></td>
+                            <td><input type="email" name="" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="katasandi">Password:</label></td>
+                            <td><input type="password" name="" id="katasandi"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="lakilaki">Laki - Laki</label> <input type="radio" name="gender" id="lakilaki">
+                                <label for="perempuan">Perempuan</label> <input type="radio" name="gender" id="perempuan">
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="setuju">Setuju</label><input type="checkbox" name="" id="setuju">
+                                <label for="tidaksetuju">Tidak Setuju</label><input type="checkbox" name="" id="tidaksetuju">
+                                <label for="sangatsetuju">Sangat Setuju</label><input type="checkbox" name="" id="sangatsetuju">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="lokasi">Lokasi:</label>
+                            </td>
+                            <td>
+                                <select id="lokasi">
+                                    <option value="">Bandung</option>
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bogor</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="textarea">Textarea:</label></td>
+                            <td><textarea name="" id="textarea"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit">Kirim!</button></td>             
+                        </tr>
+                    </form>
+                </table>
+            </div>
+             <!-- END PRAKTEK FORM -->
+        </section>
+        <!-- END PRAKTEK HTML -->
+
+        <section>
+            <h2>CSS (Cascading Style Sheets)</h2>
+            <h3>CSS pada halaman ini ada beberapa kategori yang digunakan:</h3>
+            <ol type="a">
+                <li>
+                    embed: 
+                    <p>
+                        <a href="#teorihtml">
+                            &lt;style&gt;<br>
+                            h1 { <br>
+                            &nbsp;&nbsp;color: brown;<br>
+                            &nbsp;&nbsp;font-family: Arial, Helvetica, sans-serif;<br>
+                            }<br>
+                            &lt;/style&gt;
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    inline: 
+                    <p>
+                        <a href="#taghead">
+                            &lt;h2 id="taghead" style="text-align: center; color: blue;">Tag yang Boleh Ada di &lt;head&gt;
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    External: Kita membuat file baru khusus untuk CSS
+                    <p>
+                        <a href="#belajarimage">
+                            h3 {
+                                color: red;
+                                text-align: center;
+                            }
+                        </a>
+                    </p>
+                </li>
+                
+            </ol>
+        </section>
+    </main> 
+    <!-- Akhir Main -->
+
+
+    <!-- Awal Footer -->
+    <footer>
+        <p>&copy; 2025 Aji Wijayatama Fundamental HTML</p>
+    </footer>
+    <!-- Akhir Footer -->
+    
+</body>
+</html>
