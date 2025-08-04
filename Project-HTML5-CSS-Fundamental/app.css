@@ -48,159 +48,325 @@ table {
 }
 
 /*  GLOBAL STYLES  */
-.container{
-	background-color: #FAF7F3;
+body{
+	background-color: #f7f3ed;
+	font-family: 'Merriweather', serif;
 }
 
-/* Tunggal */
-h1 {
-	font-size: 40px;
-	font-weight: bold;
-}
-h2 {
-	font-size: 30px;
-	font-weight: bold;
-	margin: 30px 0;
-}
-img:hover{
-	opacity: 0.7;
-}
-
-/* CSS HEADER */
-.header {
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    background-image: url(backgroundheader.png);
-    background-size: cover;
-    height: 410px;
-	padding: 0 0 0 10px ;
-}
-.navbar-header nav {
-    text-align: right;
-    padding: 10px ;
-}
-.button-navbar-sosmed img{
-    width: 30px;
-}
-
-.navbar-header nav ul li {
-    display: inline-block;
-    margin: 5px;
-}
-
-.header-content{
-	display: inline-block;
+/* Header */
+.container-header-navbar{
+	background-image: url(backgroundheader.png);
+	height: 440px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 	
-	margin: 250px 0 0 0;
+}
+.wrapper-header-navbar{
+	background-color: rgba(230, 223, 212, 0.8);
+	position: fixed;
+	width: 100%;
+    top: 0;
+    left: 0;
+	padding: 14px;
+	box-sizing: border-box; 
+    z-index: 9999; 
+}
+.main-menu-item {
+	display: inline;
+}
+/* float left */
+.float-left{
+	margin-left: 40px;
+	float: left;
+	
+}
+.menu-link-active {
+    font-size: 30px;
+    text-decoration: none;
+    color: #4c4238;
+    position: relative; 
 }
 
-.header-content a {
-	margin-top: 4px;
-	text-decoration: none;
-	border: 2px solid black;
-	background-color: #d0aa8e;
-	font-size: 20px;
-    color: black;          
-    padding: 10px 20px;       
-    border-radius: 5px;        
-    display: inline-block;    
-}
-.header-content a:hover{
-	background-color: #ffcc00;
-	color: #000080;
-	opacity: 0.7;     
-}
-/* END HEADER CSS */
-
-/* MAIN CSS */
-.carousel-container {
-	margin: 10px 0 0 0;
-	padding: 0 10px ;
+.menu-link-active::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px; 
+    left: 0;
+    background-color: #4c4238;
+    transition: width 0.3s ease-out; 
 }
 
-/* Carousel 1 */
-.carousel-container{
-	margin: 10px 0;
-}
-.carousel1 li a{
-	text-decoration: none;
-}
-.carousel1 li a:hover{
-	opacity: 0.7;   
-}
-.carousel1 li a figcaption {
-	padding: 0 0 0 10px;
-	color: black;
-	font-size: 20px;
-	margin: 15px 0 0 0;
+/* Efek saat hover */
+.menu-link-active:hover::after {
+    width: 100%; 
 }
 
-.carousel1 li a figure img {
-	display: block;
-	width: 350px;
-	height: 350px;
-	margin: 0 2px;
-	border: 3px solid black;
-	border-radius: 10px;
-}
-.carousel1 li {
-	display: inline-block;
-	margin: 0 5px;
-	vertical-align: top;
-}
-/* Carousel 2 */
-
-.carousel2 {
-	margin: 0 0 20px 0;
-}
-.carousel2 li a figure img {
-	display: block;
-	width: 350px;
-	height: 350px;
-	margin: 0 2px;
-	border: 3px solid black;
-	border-radius: 10px;
-}
-.carousel2 li {
-	display: inline-block;
-	margin: 0 5px;
-	vertical-align: top;
-}
-
-.carousel2 li a{
-	text-decoration: none;
-}
-.carousel2 li a:hover{
-	opacity: 0.7;   
-}
-.carousel2 li a figcaption {
-	padding: 0 0 0 10px;
-	color: black;
-	font-size: 20px;
-	margin: 15px 0 0 0;
-}
-/* END CSS MAIN */
-
-/* Footer */
-footer {
-	background-color: #d5c9c0;
+/* float right */
+.float-right{
+	float: right;
 	text-align: center;
+	margin-right: 40px;
 }
-
-
-.navbar-footer ul li {
-	display: inline-block;
-	margin: 5px;
-	padding: 10px;
+.main-menu-item{
+	margin: 0 15px;
 }
-
-.navbar-footer ul li {
-	text-decoration: none;
-}
-.navbar-footer img {
+.main-menu-item img{
 	width: 30px;
 }
 
-footer p {
-	font-size: 20px;
+.menu-link{
+	text-decoration: none;
+}
+
+.content-header{
+	margin-left: 40px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding-left: 10px;
+
+}
+.site-title{
+	font-size: 40px;
+	font-family: 'Playfair Display', serif;
+	color: #4c4238;
+}
+.cta-nav{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #d0aa8e;
 	padding: 10px;
 }
+.cta-nav:hover {
+    background-color: #4c4238;
+}
+.cta-link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+.cta-link:hover {
+    color: #f7f3ed;
+}
+/* Header */
+
+/* Main */
+.main-content{
+	margin: 40px;
+}
+
+.main-heading-title{
+	font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	text-align: center;
+	margin: 125px 0;
+	/* Properti animasi */
+    animation: fadeIn 1.5s ease-in-out forwards; 
+}
+
+.section-title{
+	font-size: 35px;
+	font-family: 'Playfair Display', serif;
+	color: #4c4238;
+}
+/* Set Gallery */
+.set-gallery{
+	margin-top: 50px;
+}
+.product-link{
+	display: inline-block;
+}
+.container-set-gallery{
+	display: inline-block;
+}
+
+.img-product {
+    width: 350px;
+    height: 400px;
+    margin: 10px 3px 3px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease; 
+}
+
+/* Efek saat kursor di atas link produk */
+.product-link:hover .img-product {
+    transform: scale(1.05);
+	opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.img-set-1{
+	background-position: 0 -60px;
+}
+
+.img-set-3{
+	background-position: 0 -35px;
+}
+.img-set-4{
+	background-position: 0 -55px;
+}
+/* Produk Tunggal Gallery */
+
+.product-tunggal-gallery{
+	margin-top: 40px;
+}
+.container-produk-tunggal-gallery{
+	display: inline-block;
+}
+.img-produk-tunggal-1{
+	background-position: 0 -70px;
+}
+
+.img-produk-tunggal-2{
+	background-position: 0 -35px;
+}
+
+.product-link{
+	text-decoration: none;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.name-img-product {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Merriweather', serif; 
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px 0;
+    text-transform: capitalize;
+    transform: translateY(100%); /* Sembunyikan teks di bawah */
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Efek saat kursor di atas gambar */
+.product-link:hover .name-img-product {
+    transform: translateY(0); /* Munculkan teks ke posisi semula */
+}
+
+/* Animasi main heading tittle */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Mulai dari bawah sedikit */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Kembali ke posisi semula */
+    }
+}
+
+/* Footer */
+.site-footer {
+    background-color: #4c4238; 
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Merriweather', serif;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #f5f5dc; 
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #d1b490; 
+}
+
+.social-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #d1b490; /
+}
+/* Footer */
+/* Micro clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
