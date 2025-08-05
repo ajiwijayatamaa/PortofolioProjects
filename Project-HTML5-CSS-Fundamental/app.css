@@ -64,14 +64,14 @@ body{
 }
 .wrapper-header-navbar{
 	background-color: rgba(230, 223, 212, 0.8);
-	position: fixed;
+	position: sticky;
 	width: 100%;
     top: 0;
     left: 0;
 	padding: 14px;
 	box-sizing: border-box; 
-    z-index: 9999; 
 }
+
 .main-menu-item {
 	display: inline;
 }
@@ -274,6 +274,89 @@ figure {
     }
 }
 
+.modal {
+    visibility: hidden; /* Sembunyikan modal secara default */
+    opacity: 0;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    transition: opacity 0.3s ease; /* Tambahkan transisi */
+  
+}
+
+/* Gunakan :target untuk menampilkan modal saat URL berubah */
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #f7f3ed;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-button {
+    color: #4c4238;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #d0aa8e;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: 0 -180px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.modal-set-romawi{
+    width: 100%;
+    padding-top: 75%;
+    background-size: cover;
+    background-position: 0 -180px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.modal-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-top: 15px;
+    color: #4c4238;
+}
+
+.modal-description {
+    font-family: 'Merriweather', serif;
+    margin-top: 10px;
+    color: #4c4238;
+}
+
+
+
+
 /* Footer */
 .site-footer {
     background-color: #4c4238; 
@@ -354,6 +437,7 @@ figure {
     color: #d1b490; /
 }
 /* Footer */
+
 /* Micro clearfix */
 
 .cf:before,
